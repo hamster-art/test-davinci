@@ -1,0 +1,34 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $breadcrumb-margin-bottom;
+  padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+
+  background-color: $breadcrumb-bg;
+
+  list-style: none;
+
+  @include font-size($breadcrumb-font-size);
+
+  @include border-radius($breadcrumb-border-radius);
+}
+
+.breadcrumb-item {
+  // The separator between breadcrumbs (by default, a forward-slash: "/")
+  + .breadcrumb-item {
+    padding-left: $breadcrumb-item-padding-x;
+
+    &::before {
+      content: var(--#{$variable-prefix}breadcrumb-divider, escape-svg($breadcrumb-divider)) #{'/* rtl:'} var(--#{$variable-prefix}breadcrumb-divider, escape-svg($breadcrumb-divider-flipped)) #{'*/'};
+
+      padding-right: $breadcrumb-item-padding-x;
+      float: left; // Suppress inline spacings and underlining of the separator
+
+      color: $breadcrumb-divider-color;
+    }
+  }
+
+  &.active {
+    color: $breadcrumb-active-color;
+  }
+}

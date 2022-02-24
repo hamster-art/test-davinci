@@ -1,0 +1,30 @@
+// Shorthand
+
+.fixed-top {
+  position: fixed;
+  z-index: $zindex-fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.fixed-bottom {
+  position: fixed;
+  z-index: $zindex-fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// Responsive sticky top
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .sticky#{$infix}-top {
+      position: sticky;
+      z-index: $zindex-sticky;
+      top: 0;
+    }
+  }
+}

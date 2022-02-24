@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/CRC25.woff2') format('woff2'), url('./fonts/CRC25.woff') format('woff');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/IBMPlexSans-Regular.woff2') format('woff2'), url('./fonts/IBMPlexSans-Regular.woff') format('woff');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/IBMPlexMono-Regular.woff2') format('woff2'), url('./fonts/IBMPlexMono-Regular.woff') format('woff');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/IBMPlexMono-SemiBold.woff2') format('woff2'), url('./fonts/IBMPlexMono-SemiBold.woff') format('woff');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/IBMPlexMono-Bold.woff2') format('woff2'), url('./fonts/IBMPlexMono-Bold.woff') format('woff');
+
+  font-display: swap;
+}

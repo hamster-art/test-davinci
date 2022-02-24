@@ -1,0 +1,115 @@
+html {
+  height: 100%;
+
+  font-size: $base;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+
+  color: $primary;
+
+  font-family: 'IBMPlexMono', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-btn {
+  height: rem(60);
+  padding-right: 4.5rem;
+  padding-left: 4.5rem;
+
+  border-width: 2px;
+  border-radius: rem(12);
+
+  font-size: rem(16);
+  font-weight: 600;
+}
+
+.custom-btn__icon {
+  width: rem(20);
+  height: rem(20);
+
+  .custom-btn:hover & {
+    fill: $white;
+  }
+}
+
+.link {
+  display: block;
+
+  font-size: rem(14);
+  text-decoration: none;
+
+  &--primary {
+    color: $white;
+
+    &:hover {
+      color: $grey;
+    }
+  }
+
+  &--secondary {
+    color: $grey;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &--custom {
+    font-family: 'Circe', sans-serif;
+  }
+}
+
+.field {
+  position: relative;
+  height: rem(64);
+
+  border: 2px solid $primary;
+  border-radius: rem(12);
+
+  font-family: 'IBMPlexSans', sans-serif;
+  font-size: rem(16);
+}
+
+.field__input {
+  width: 100%;
+  height: 100%;
+  padding-right: rem(24);
+  padding-left: rem(24);
+
+  border-width: 0;
+
+  background-color: transparent;
+
+  color: $primary;
+  line-height: rem(64);
+
+  .field--has-icon & {
+    padding-right: 3rem;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  top: 50%;
+  right: rem(20);
+  width: rem(24);
+  height: rem(24);
+
+  transform: translateY(-50%);
+}

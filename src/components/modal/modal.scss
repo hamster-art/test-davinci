@@ -1,0 +1,34 @@
+.custom-modal {
+  font-family: 'IBMPlexSans', sans-serif;
+}
+
+.custom-modal__dialog {
+  @media (min-width: 800px) {
+    max-width: rem(800);
+  }
+}
+
+.custom-modal__content {
+  border-radius: rem(22);
+}
+
+.custom-modal__title {
+  padding-right: rem(12);
+  padding-left: rem(12);
+
+  border-radius: rem(16);
+
+  background-color: $yellow;
+
+  font-size: rem(16);
+  line-height: rem(24);
+  text-transform: uppercase;
+}
+
+.custom-modal__close {
+  opacity: 1;
+}
+
+.custom-modal__subtitle {
+  font-size: rem(12);
+}

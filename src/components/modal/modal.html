@@ -1,0 +1,40 @@
+<div class="custom-modal modal" id="modal">
+  <div class="custom-modal__dialog modal-dialog">
+    <div class="custom-modal__content modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header border-bottom-0">
+        <h4 class="custom-modal__title modal-title">ЗАМЕР – БЕСПЛАТНО</h4>
+        <button type="button" class="btn-close custom-modal__close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body pt-0">
+        <p class="custom-modal__subtitle">
+          Оставьте контактные данные и менеджер свяжется с Вами, чтобы согласовать дату и время выезда инженера
+        </p>
+        <form class="js-form">
+          <div class="d-md-flex gap-md-3">
+            <div class="field flex-grow-1 mb-3">
+              <label class="visually-hidden" for="name">имя</label>
+              <input class="field__input" id="name" type="text" placeholder="имя" />
+            </div>
+            <div class="field field--has-icon flex-grow-1 mb-3">
+              <label class="visually-hidden" for="phone">телефон</label>
+              <input class="field__input" id="phone" type="text" placeholder="телефон" />
+              <svg class="field__icon">
+                <use xlink:href="./styles/icons/sprite.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="custom-btn btn btn-dark w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
+          >
+            Заказать звонок
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

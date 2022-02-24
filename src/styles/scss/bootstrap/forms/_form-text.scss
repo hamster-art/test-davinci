@@ -1,0 +1,13 @@
+//
+// Form text
+//
+
+.form-text {
+  margin-top: $form-text-margin-top;
+
+  color: $form-text-color;
+  font-style: $form-text-font-style;
+  font-weight: $form-text-font-weight;
+
+  @include font-size($form-text-font-size);
+}
